@@ -1,31 +1,210 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
-    <title>AOT API</title>
+    <title>Attack On Titan API</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4&display=swap" rel="stylesheet">
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
     <style>
-        body {
+        * {
+            box-sizing: border-box;
             margin: 0;
+            padding: 0;
+            font-family: 'Source Serif 4', sans-serif;
+        }
+
+        .intro h3 {
+            font-family: 'Rowdies', cursive;
+            letter-spacing: 4px;
+            font-size: 2.5rem;
+            text-align: center;
+            margin-top: 3em;
+        }
+
+        .intro p {
+            text-align: center;
+            margin-top: 17px;
+            font-size: 25px;
+        }
+
+        @media screen and (max-width: 600px) {
+            .intro p {
+                font-size: 20px;
+            }
+        }
+
+        hr {
+            margin-top: 12px;
+            color: black;
+            border: 2px solid black;
+            width: 50%;
+            text-align: center;
+            margin: auto;
+            margin-top: 12px;
+        }
+
+        .star p {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+
+        .block {
+            border: 1px solid #000;
+            font-size: 18px;
+            box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.4);
+            width: 50%;
+            margin: auto;
+            margin-top: 3em;
+        }
+
+        .block-desc {
+            background-color: #000;
+            color: #fff;
             padding: 10px;
+
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: center;
+            align-content: stretch;
+            align-items: flex-start;
         }
-        div {
-            margin: 0;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+        .block-desc p {
+            display: inline-block;
+
+            order: 1;
+            flex: 1 1 auto;
+            align-self: flex-start;
         }
-        li {
-            padding: 5px;
+
+        .block-container {
+            padding: 20px;
         }
+
+        .block-endpoint {
+            border-bottom: 1px solid #000;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+            font-size: 20px;
+            overflow: auto;
+        }
+
+        .method {
+            background-color: #000;
+            color: #fff;
+            padding: 5px 10px;
+            font-size: 14px;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+
+        section {
+    margin-bottom: 30px;
+    margin-top: 40px;
+    margin-left: 100px;
+}
+section h1 {
+    margin-bottom: 15px;
+    font-size: 26px;
+}
+section > p {
+    font-size: 25px;
+    line-height: 40px;
+    color: black;
+    padding-right: 22em;
+    word-spacing: 17px;
+}
+section a:hover {
+    text-decoration: none;
+    background-color: #000;
+    color: #fff;
+}
+
+section a{
+    color: #000;
+}
     </style>
 </head>
+
 <body>
-    <div>
-        Here are the endpoints:
-        <ul> 
-        <li><a href="/random/">/random/</a>: Random Thanos quote</li>
-        <li><a href="/random/5/">/random/&lt;integer&gt;/</a>: Specified number of random Thanos quotes, has to be less than or equal to <%= amount %></li>
-        <li><a href="/all/">/all/</a>: All Thanos quotes</li>
-        </ul>
+
+    <div class="intro">
+        <h3> Attack On Titan Quotes API ⚔️</h3>
+        <hr>
+        <p>A free API to retrive some quotes of Attack On Titan </p>
     </div>
+
+    <div class="star">
+        <p class="star-button"><a class="github-button" href="https://github.com/thestuti/aot-api"
+                data-icon="octicon-star" data-size="large" aria-label="Star thestuti/aot-api on GitHub">Star</a></p>
+    </div>
+
+
+    <div class="block" id="random-quote">
+
+        <div class="block-desc">
+            <p> ❯ Get a random quote</p>
+        </div>
+
+        <div class="block-container">
+
+            <div class="block-endpoint">
+                <span class="method">GET</span> <a href="/random">/random</a>
+            </div>
+
+
+        </div>
+    </div>
+
+    <div class="block" id="random-integer-quote">
+
+        <div class="block-desc">
+            <p> ❯ Get Specified number of random Thanos quotes, has to be less than or equal to <%= amount %>
+            </p>
+        </div>
+
+        <div class="block-container">
+
+            <div class="block-endpoint">
+                <span class="method">GET</span> <a href="/random/5/">/random/&lt;integer&gt;/</a>
+            </div>
+
+
+        </div>
+    </div>
+
+
+    <div class="block" id="random-integer-quote">
+
+        <div class="block-desc">
+            <p> ❯ All quotes</p>
+        </div>
+
+        <div class="block-container">
+
+            <div class="block-endpoint">
+                <span class="method">GET</span><a href="/all/"> /all/</a>
+            </div>
+        </div>
+    </div>
+
+
+    <section>
+
+        <h1>How to contribute</h1>
+
+        <p>If you want to suggest a quote from Breaking Bad, go to the <a href="https://github.com/thestuti/aot-api" target="_blank">GitHub repository</a>, <a class="github-button" href="https://github.com/thestuti/aot-api/fork" data-icon="octicon-repo-forked" aria-label="Fork thestuti/aot-api on GitHub">fork</a> the project, add your quote to the <a href="https://github.com/thestuti/aot-api/blob/main/quotes/quotes.js" target="_blank">quotes.js</a> file and just do a pull request!</p>
+
+    </section>
+
+
+
+
 </body>
+
 </html>
