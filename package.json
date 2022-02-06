@@ -1,0 +1,19 @@
+{
+  "name": "aotapi",
+  "version": "1.0.0",
+  "description": "API that returns Attack On Titan Quotes",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "Stuti Upreti",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "express-rate-limit": "^3.4.0",
+    "nodemon": "^1.18.10"
+  }
+}
