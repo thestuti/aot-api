@@ -18,18 +18,20 @@ Get a random quote in this format:
 
 > [https://aot-quotes-api.herokuapp.com/random](https://aot-quotes-api.herokuapp.com/random)
 
+``` json
 {
     "id": 26,
     "quote": "Everyone can make a choice after they have learned what it will result in. It is so easy to say we should have done it this way afterwards. But you can’t know what your choice will result in before actually choosing."
 }
 
-
+``` 
 ### `GET /random/{number}`
 
 Returns an array with `{number}` quotes e.g. `GET /random/5`.
 
 > [https://aot-quotes-api.herokuapp.com/random/5/](https://aot-quotes-api.herokuapp.com/random/5/)
 
+``` json 
 [
     {
         "id": 61,
@@ -53,6 +55,7 @@ Returns an array with `{number}` quotes e.g. `GET /random/5`.
     }
 ]
 
+```
 
 
 ## Contributing
