@@ -12,7 +12,7 @@ A simple API to retrieve some quotes of Attack On Titan
 
 ## API
 
-### `GET /v1/random`
+### `GET /random`
 
 Get a random quote in this format:
 
