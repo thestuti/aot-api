@@ -65,7 +65,8 @@ Returns an array with `{number}` quotes e.g. `GET /random/5`.
 
 If you want to add some quotes, just add them in `quotes/quotes.js` file and do a pull request !
 
-** Contributors**
+<b> Contributors </b<>
+
 [Anuj aka TheCoolDev](https://github.com/TheCoolGDev)
 
 
