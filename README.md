@@ -6,9 +6,12 @@ A simple API to retrieve some quotes of Attack On Titan
 
 :globe_with_meridians: Website and demo: https://aot-quotes-api.herokuapp.com/
 
+**Check out python version of this project by nishant sensei :  https://github.com/thenishantsapkota/aot-api-py**
+
 ## Production host
 
 [https://aot-quotes-api.herokuapp.com/](https://aot-quotes-api.herokuapp.com/)
+
 
 ## API
 
