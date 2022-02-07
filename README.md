@@ -6,13 +6,16 @@ A simple API to retrieve some quotes of Attack On Titan
 
 :globe_with_meridians: Website and demo: https://aot-quotes-api.herokuapp.com/
 
+**Check out python version of this project by Nishant Sensei :  https://github.com/thenishantsapkota/aot-api-py**
+
 ## Production host
 
 [https://aot-quotes-api.herokuapp.com/](https://aot-quotes-api.herokuapp.com/)
 
+
 ## API
 
-### `GET /v1/random`
+### `GET /random`
 
 Get a random quote in this format:
 
@@ -62,4 +65,14 @@ Returns an array with `{number}` quotes e.g. `GET /random/5`.
 
 If you want to add some quotes, just add them in `quotes/quotes.js` file and do a pull request !
 
+<b> Contributors </b>
+
+[Anuj aka TheCoolDev](https://github.com/TheCoolGDev)
+
+
+# TODO
+
+- [ ] Better UI
+- [ ] Make site responsive for mobile
+- [ ] Add authors in API
 
