@@ -68,4 +68,5 @@ If you want to add some quotes, just add them in `quotes/quotes.js` file and do 
 
 - [ ] Better UI
 - [ ] Make site responsive for mobile
+- [ ] Add authors in API
 
