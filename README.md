@@ -28,9 +28,9 @@ Get a random quote in this format:
 }
 
 ``` 
-### `GET /random/{number}`
+### `GET /random?count={number}`
 
-Returns an array with `{number}` quotes e.g. `GET /random/5`.
+Returns an array with `{number}` quotes e.g. `GET /random?count=5`.
 
 > [https://aot-quotes-api.herokuapp.com/random/5/](https://aot-quotes-api.herokuapp.com/random/5/)
 
@@ -67,7 +67,8 @@ If you want to add some quotes, just add them in `quotes/quotes.js` file and do 
 
 <b> Contributors </b>
 
-[Anuj aka TheCoolDev](https://github.com/TheCoolGDev)
+[Anuj aka TheCoolDev](https://github.com/TheCoolGDev) <br>
+[Dipshan](https://github.com/dipshanadh)
 
 
 # TODO
