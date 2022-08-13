@@ -68,7 +68,7 @@ If you want to add some quotes, just add them in `quotes/quotes.js` file and do 
 <b> Contributors </b>
 
 [Anuj aka TheCoolDev](https://github.com/TheCoolGDev) <br>
-[Dipshan] (https://github.com/dipshanadh)
+[Dipshan](https://github.com/dipshanadh)
 
 
 # TODO
