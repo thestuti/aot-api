@@ -1,40 +1,75 @@
-const quotes = require('./quotes/quotes.js');
+// Importing the quotes
+const quotes = require("./quotes/quotes.js")
 
-function randomQuote() {
-    return quotes[Math.floor(Math.random() * quotes.length)];
+const getAllQuotes = (req, res) => {
+	const count = parseInt(req.query.count)
+
+	// If count is not specified, then send all quotes
+	if (!count)
+		return res.json({
+			success: true,
+			count: quotes.length,
+			quotes,
+		})
+
+	if (count > quotes.length)
+		return res.status(400).json({
+			success: false,
+			error: `Specified number exceeds number of quotes. Total number of quotes right now are ${quotes.length}`,
+		})
+
+	if (count < 0)
+		return res.status(400).json({
+			success: false,
+			error: "Are you retarded?",
+		})
+
+	// If count is specified and is above 0 and not more than no. of existing quotes
+	res.json({
+		success: true,
+		count,
+		quotes: quotes.slice(0, count),
+	})
 }
 
-function randomQuotes(n) {
-    var data = [];
-    var quotesCopy = quotes.slice();
-    amount = Number(n);
-    if (amount > quotes.length) {
-        return {"error": "Specified number exceeds number of quotes. Total number of quotes right now are " + String(quotes.length)};
-    }
-    else if (amount < 1 || !Number.isInteger(amount)) {
-        return {"error": "Are you retarded?"};
-    }
-    else {   
-        while (data.length < amount) {
-            let index = Math.floor(Math.random() * quotesCopy.length);
-            data.push(quotesCopy[index]);
-            quotesCopy.splice(index, 1);
-        }
-        return data;
-    }
-}
+const getRandomQuote = (req, res) => {
+	const count = parseInt(req.query.count)
 
-function allQuotes() {
-    return quotes;
-}
+	// If count is not specified, then send a random quote
+	if (!count)
+		return res.json({
+			success: true,
+			count: quotes.length,
+			quote: quotes[Math.floor(Math.random() * quotes.length)],
+		})
 
-function numOfQuotes() {
-    return quotes.length;
+	if (count > quotes.length)
+		return res.status(400).json({
+			success: false,
+			error: `Specified number exceeds number of quotes. Total number of quotes right now are ${quotes.length}`,
+		})
+
+	if (count < 0)
+		return res.status(400).json({
+			success: false,
+			error: "Are you retarded?",
+		})
+
+	//  If count is specified, then send 'N' random quotes
+	const data = []
+
+	for (let i = 0; i < count; i++) {
+		data.push(quotes[Math.ceil(Math.random() * quotes.length)])
+	}
+
+	res.json({
+		success: true,
+		count,
+		quotes: data,
+	})
 }
 
 module.exports = {
-    randomQuote,
-    allQuotes,
-    randomQuotes,
-    numOfQuotes
-};
+	getAllQuotes,
+	getRandomQuote,
+}
