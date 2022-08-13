@@ -28,9 +28,9 @@ Get a random quote in this format:
 }
 
 ``` 
-### `GET /random/{number}`
+### `GET /random?count={number}`
 
-Returns an array with `{number}` quotes e.g. `GET /random/5`.
+Returns an array with `{number}` quotes e.g. `GET /random?count=5`.
 
 > [https://aot-quotes-api.herokuapp.com/random/5/](https://aot-quotes-api.herokuapp.com/random/5/)
 
