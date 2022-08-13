@@ -1,5 +1,5 @@
 // Importing the quotes
-const quotes = require("./quotes/quotes.js")
+const quotes = require("./data/quotes.js")
 
 const getAllQuotes = (req, res) => {
 	const count = parseInt(req.query.count)
