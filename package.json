@@ -2,7 +2,7 @@
 	"name": "aot-api",
 	"version": "1.0.0",
 	"description": "API that returns Attack On Titan Quotes",
-	"main": "index.js",
+	"main": "server.js",
 	"scripts": {
 		"start": "node server",
 		"dev": "nodemon server"

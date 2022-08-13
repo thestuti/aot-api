@@ -4,7 +4,7 @@ const rateLimit = require("express-rate-limit")
 const cors = require("cors")
 
 // Handler functions
-const { getAllQuotes, getRandomQuote } = require("./handlers")
+const { getAllQuotes, getRandomQuote } = require("./controllers")
 
 // Initializing app
 const app = express()
@@ -21,7 +21,7 @@ const limiter = rateLimit({
 app.enable("trust proxy")
 
 // Static folder
-app.use(express.static("views"))
+app.use(express.static("public"))
 
 // Limiter middleware
 app.use(limiter)
