@@ -1,134 +1,126 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8" />
-		<title>Attack On Titan API</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
+  <head>
+    <meta charset="utf-8" />
+    <title>Attack On Titan API</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-		<link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./style.css" />
 
-		<link
-			href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300&display=swap"
-			rel="stylesheet"
-		/>
-		<link
-			href="https://fonts.googleapis.com/css2?family=Source+Serif+4&display=swap"
-			rel="stylesheet"
-		/>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Serif+4&display=swap"
+      rel="stylesheet"
+    />
 
-		<script async defer src="https://buttons.github.io/buttons.js"></script>
-	</head>
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+  </head>
 
-	<body>
-		<main>
-			<section class="intro">
-				<h3>Attack On Titan Quotes API ⚔️</h3>
-				<hr />
-				<p>A free API to retrive some quotes of Attack On Titan</p>
-			</section>
+  <body>
+    <main>
+      <section class="intro">
+        <h3>Attack On Titan Quotes API ⚔️</h3>
+        <hr />
+        <p>A free API to retrive some quotes of Attack On Titan</p>
+      </section>
 
-			<div class="star">
-				<a
-					class="github-button"
-					href="https://github.com/thestuti/aot-api"
-					data-icon="octicon-star"
-					data-size="large"
-					aria-label="Star thestuti/aot-api on GitHub"
-					>Star</a
-				>
-			</div>
+      <div class="star">
+        <a
+          class="github-button"
+          href="https://github.com/thestuti/aot-api"
+          data-icon="octicon-star"
+          data-size="large"
+          aria-label="Star thestuti/aot-api on GitHub"
+          >Star</a
+        >
+      </div>
 
-			<section class="methods">
-				<div class="block">
-					<div class="block-desc">
-						<p>❯ Get a random quote</p>
-					</div>
+      <section class="methods">
+        <div class="block">
+          <div class="block-desc">
+            <p>❯ Get a random quote</p>
+          </div>
 
-					<div class="block-container">
-						<div class="block-endpoint">
-							<span class="method">GET</span>
-							<a href="/random">/random</a>
-						</div>
-					</div>
-				</div>
+          <div class="block-container">
+            <div class="block-endpoint">
+              <span class="method">GET</span>
+              <a href="/random">/random</a>
+            </div>
+          </div>
+        </div>
 
-				<div class="block">
-					<div class="block-desc">
-						<p>
-							❯ Get specified number of random Thanos quotes, has
-							to be less than or equal to existing number of
-							quotes
-						</p>
-					</div>
+        <div class="block">
+          <div class="block-desc">
+            <p>
+              ❯ Get specified number of random Thanos quotes, has to be less
+              than or equal to existing number of quotes
+            </p>
+          </div>
 
-					<div class="block-container">
-						<div class="block-endpoint">
-							<span class="method">GET</span>
-							<a href="/random?count=5"
-								>/random?count=&lt;integer&gt;</a
-							>
-						</div>
-					</div>
-				</div>
+          <div class="block-container">
+            <div class="block-endpoint">
+              <span class="method">GET</span>
+              <a href="/random?count=5">/random?count=&lt;integer&gt;</a>
+            </div>
+          </div>
+        </div>
 
-				<div class="block">
-					<div class="block-desc">
-						<p>❯ All quotes</p>
-					</div>
+        <div class="block">
+          <div class="block-desc">
+            <p>❯ All quotes</p>
+          </div>
 
-					<div class="block-container">
-						<div class="block-endpoint">
-							<span class="method">GET</span>
-							<a href="/all/">/all/</a>
-						</div>
-					</div>
-				</div>
+          <div class="block-container">
+            <div class="block-endpoint">
+              <span class="method">GET</span>
+              <a href="/all/">/all/</a>
+            </div>
+          </div>
+        </div>
 
-				<div class="block">
-					<div class="block-desc">
-						<p>
-							❯ Get specified number of quotes, has to be less
-							than or equal to existing number of quotes
-						</p>
-					</div>
+        <div class="block">
+          <div class="block-desc">
+            <p>
+              ❯ Get specified number of quotes, has to be less than or equal to
+              existing number of quotes
+            </p>
+          </div>
 
-					<div class="block-container">
-						<div class="block-endpoint">
-							<span class="method">GET</span>
-							<a href="/all?count=5"
-								>/all?count=&lt;integer&gt;</a
-							>
-						</div>
-					</div>
-				</div>
-			</section>
+          <div class="block-container">
+            <div class="block-endpoint">
+              <span class="method">GET</span>
+              <a href="/all?count=5">/all?count=&lt;integer&gt;</a>
+            </div>
+          </div>
+        </div>
+      </section>
 
-			<section class="contribute">
-				<u><h1>How to contribute</h1></u>
-				<p>
-					If you want to suggest a quote from Attack On Titan, go to
-					the
-					<a
-						href="https://github.com/thestuti/aot-api"
-						target="_blank"
-						>GitHub repository</a
-					>,
-					<a
-						class="github-button"
-						href="https://github.com/thestuti/aot-api/fork"
-						data-icon="octicon-repo-forked"
-						aria-label="Fork thestuti/aot-api on GitHub"
-						>fork</a
-					>
-					the project, add your quote to the
-					<a
-						href="https://github.com/thestuti/aot-api/blob/main/data/quotes.js"
-						target="_blank"
-						>quotes.js</a
-					>
-					file and just do a pull request!
-				</p>
-			</section>
-		</main>
-	</body>
+      <section class="contribute">
+        <u><h1>How to contribute</h1></u>
+        <p>
+          If you want to suggest a quote from Attack On Titan, go to the
+          <a href="https://github.com/thestuti/aot-api" target="_blank"
+            >GitHub repository</a
+          >,
+          <a
+            class="github-button"
+            href="https://github.com/thestuti/aot-api/fork"
+            data-icon="octicon-repo-forked"
+            aria-label="Fork thestuti/aot-api on GitHub"
+            >fork</a
+          >
+          the project, add your quote to the
+          <a
+            href="https://github.com/thestuti/aot-api/blob/main/data/quotes.js"
+            target="_blank"
+            >quotes.js</a
+          >
+          file and just do a pull request!
+        </p>
+      </section>
+    </main>
+  </body>
 </html>
