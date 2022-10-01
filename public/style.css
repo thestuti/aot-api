@@ -1,110 +1,110 @@
 * {
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
-	font-family: "Source Serif 4", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Source Serif 4", sans-serif;
 }
 
 body {
-	padding: 2em;
+  padding: 2em;
 }
 
 main {
-	max-width: 80ch;
-	margin-left: auto;
-	margin-right: auto;
+  max-width: 80ch;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .intro h3 {
-	font-family: "Rowdies", cursive;
-	letter-spacing: 4px;
-	font-size: 2.5rem;
-	text-align: center;
+  font-family: "Rowdies", cursive;
+  letter-spacing: 4px;
+  font-size: 2.5rem;
+  text-align: center;
 }
 
 hr {
-	border: 2px solid black;
-	margin-top: 12px;
+  border: 2px solid black;
+  margin-top: 12px;
 }
 
 .intro p {
-	text-align: center;
-	margin-top: 17px;
-	margin-bottom: 17px;
-	font-size: 25px;
+  text-align: center;
+  margin-top: 17px;
+  margin-bottom: 17px;
+  font-size: 25px;
 }
 
 .star {
-	text-align: center;
+  text-align: center;
 }
 
 .methods {
-	margin-top: 2em;
+  margin-top: 2em;
 }
 
 .block {
-	border: 1px solid #000;
-	font-size: 18px;
-	box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.4);
-	margin-bottom: 1.75em;
+  border: 1px solid #000;
+  font-size: 18px;
+  box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.4);
+  margin-bottom: 1.75em;
 }
 
 .block-desc {
-	background-color: #000;
-	color: #fff;
-	padding: 10px;
-	display: flex;
-	align-items: center;
+  background-color: #000;
+  color: #fff;
+  padding: 10px;
+  display: flex;
+  align-items: center;
 }
 
 .block-container {
-	padding: 20px;
+  padding: 20px;
 }
 
 .block-endpoint {
-	border-bottom: 1px solid #000;
-	padding-bottom: 20px;
-	margin-bottom: 20px;
-	font-size: 20px;
+  border-bottom: 1px solid #000;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  font-size: 20px;
 }
 
 .method {
-	background-color: #000;
-	color: #fff;
-	padding: 5px 10px;
-	font-size: 14px;
-	font-weight: bold;
-	border-radius: 5px;
+  background-color: #000;
+  color: #fff;
+  padding: 5px 10px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 5px;
 }
 
 .contribute h1 {
-	margin-bottom: 15px;
-	font-size: 26px;
+  margin-bottom: 15px;
+  font-size: 26px;
 }
 
 .contribute > p {
-	font-size: 25px;
-	line-height: 35px;
-	color: black;
-	word-spacing: 10px;
+  font-size: 25px;
+  line-height: 35px;
+  color: black;
+  word-spacing: 10px;
 }
 
 .contribute a {
-	color: #000;
+  color: #000;
 }
 
 .contribute a:hover {
-	text-decoration: none;
-	background-color: #000;
-	color: #fff;
+  text-decoration: none;
+  background-color: #000;
+  color: #fff;
 }
 
 @media screen and (max-width: 600px) {
-	body {
-		padding: 1em;
-	}
+  body {
+    padding: 1em;
+  }
 
-	.intro p {
-		font-size: 20px;
-	}
+  .intro p {
+    font-size: 20px;
+  }
 }
