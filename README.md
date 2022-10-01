@@ -13,10 +13,17 @@ A simple API to retrieve some quotes of Attack On Titan
 ```
 git clone https://github.com/thestuti/aot-api
 ```
+
 ```
 cd aot-api
 ```
+
 - create .env file, add variables according to .env.example
+
+```
+npm install
+```
+
 ```
 npm start dev
 ```
