@@ -1,21 +1,21 @@
 {
-	"name": "aot-api",
-	"version": "1.0.0",
-	"description": "API that returns Attack On Titan Quotes",
-	"main": "server.js",
-	"scripts": {
-		"start": "node server",
-		"dev": "nodemon server"
-	},
-	"author": "Stuti Upreti",
-	"license": "ISC",
-	"dependencies": {
-		"cors": "^2.8.5",
-		"dotenv": "^16.0.3",
-		"express": "^4.16.4",
-		"express-rate-limit": "^3.4.0"
-	},
-	"devDependencies": {
-		"nodemon": "^2.0.19"
-	}
+  "name": "aot-api",
+  "version": "1.0.0",
+  "description": "API that returns Attack On Titan Quotes",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server",
+    "dev": "nodemon server"
+  },
+  "author": "Stuti Upreti",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.16.4",
+    "express-rate-limit": "^3.4.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  }
 }
