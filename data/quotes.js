@@ -84,6 +84,11 @@ const quotes = [
   "But I think...It's time to let him rest.",
   "Ever since I joined the survey corps, I’ve had people dying on me every day. But you understand, don’t you?",
   "It's not just Major Hange. They're all weirdos. It's like a haven for freaks.",
+  "So, Just Do The Best You Can And Choose Whichever You’ll Regret The Least.",
+  "What You Need Is to Be Quick To Act…And Make Tough Decisions In Worst-Case Scenarios.",
+  "The Lesson You Need To Learn Right Now, Can’t Be Taught With Words...Only With Action.",
+  "This Is Just My Opinion, But When It Comes To Teaching Somebody Discipline…I Think Pain Is The Most Effective Way.",
+  "If You Don’t Want To Die — Think."
 ];
 
 module.exports = quotes.map((quote, idx) => ({ id: idx + 1, quote }));
