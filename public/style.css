@@ -82,6 +82,11 @@ hr {
   font-size: 26px;
 }
 
+.center {
+  display: flex;
+  justify-content: center;
+}
+
 .contribute > p {
   font-size: 25px;
   line-height: 35px;
