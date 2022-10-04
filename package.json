@@ -5,7 +5,8 @@
   "main": "server.js",
   "scripts": {
     "start": "node server",
-    "dev": "nodemon server"
+    "dev": "nodemon server",
+    "lint": "eslint data --ext .js"
   },
   "author": "Stuti Upreti",
   "license": "ISC",
@@ -16,6 +17,7 @@
     "express-rate-limit": "^3.4.0"
   },
   "devDependencies": {
+    "eslint": "^8.24.0",
     "nodemon": "^2.0.19"
   }
 }
