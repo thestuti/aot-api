@@ -89,9 +89,6 @@ const quotes = [
   "The Lesson You Need To Learn Right Now, Can’t Be Taught With Words...Only With Action.",
   "This Is Just My Opinion, But When It Comes To Teaching Somebody Discipline…I Think Pain Is The Most Effective Way.",
   "If You Don’t Want To Die — Think."
-  "live for your own sake"
-  "I think the best disciplining is pain."
-  "A person who cannot give up anything, can change nothing."
 ];
 
 module.exports = quotes.map((quote, idx) => ({ id: idx + 1, quote }));
