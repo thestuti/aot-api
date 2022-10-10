@@ -21,11 +21,15 @@ cd aot-api
 - create .env file, add variables according to .env.example
 
 ```
+cp .env.example .env
+```
+
+```
 npm install
 ```
 
 ```
-npm start dev
+npm run dev
 ```
 
 ## Production host

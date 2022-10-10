@@ -1,7 +1,7 @@
 const quotes = require("./data/quotes.js");
 
 const getAllQuotes = (req, res) => {
-  const count = parseInt(req.query.count);
+  const count = parseInt(req.query.count, 10) || quotes.length;
   if (isNaN(count)) {
     return res.status(400).json({
       message: "count query must be an integer",
@@ -27,7 +27,7 @@ const getAllQuotes = (req, res) => {
       error: "Are you retarded?",
     });
 
-  res.json({
+  return res.json({
     success: true,
     count,
     quotes: quotes.slice(0, count),
@@ -35,19 +35,13 @@ const getAllQuotes = (req, res) => {
 };
 
 const getRandomQuote = (req, res) => {
-  const count = parseInt(req.query.count);
+  const count = parseInt(req.query.count, 10) || quotes.length;
 
   if (isNaN(count)) {
     return res.status(400).json({
       message: "count query must be an integer",
     });
   }
-  if (!count)
-    return res.json({
-      success: true,
-      count: quotes.length,
-      quote: quotes[Math.floor(Math.random() * quotes.length)],
-    });
 
   if (count > quotes.length)
     return res.status(400).json({
@@ -67,7 +61,7 @@ const getRandomQuote = (req, res) => {
     data.push(quotes[Math.ceil(Math.random() * quotes.length)]);
   }
 
-  res.json({
+  return res.json({
     success: true,
     count,
     quotes: data,
