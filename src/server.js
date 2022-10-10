@@ -3,7 +3,11 @@ import rateLimit from "express-rate-limit";
 import cors from "cors";
 
 import { PORT } from "../config.js";
-import { getAllQuotes, getRandomQuote } from "./controllers.js";
+import {
+  getAllQuotes,
+  getRandomQuote,
+  notFoundHandler,
+} from "./controllers.js";
 
 const limiter = rateLimit({
   windowMs: 10 * 60 * 1000,
@@ -17,6 +21,9 @@ const app = express()
   .use(limiter)
   .use(cors())
   .get("/random", getRandomQuote)
-  .get("/all", getAllQuotes);
+  .get("/all", getAllQuotes)
+  .use(notFoundHandler);
 
-app.listen(PORT, () => console.log(`Server listening on port ${PORT}!`));
+app.listen(PORT, () => {
+  console.log(`Server listening on port ${PORT}!`);
+});

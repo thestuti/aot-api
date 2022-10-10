@@ -72,4 +72,10 @@ const getAllQuotes = (req, res) => {
   });
 };
 
-export { getRandomQuote, getAllQuotes };
+const notFoundHandler = (req, res) => {
+  res.status(404).json({
+    error: `No such route: ${req.path}`,
+  });
+};
+
+export { getRandomQuote, getAllQuotes, notFoundHandler };
