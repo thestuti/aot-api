@@ -1,7 +1,7 @@
-require("dotenv").config();
 const express = require("express");
 const rateLimit = require("express-rate-limit");
 const cors = require("cors");
+const { PORT } = require("./config");
 
 const { getAllQuotes, getRandomQuote } = require("./controllers");
 
@@ -23,5 +23,4 @@ app.use(cors());
 
 app.get("/all", getAllQuotes).get("/random", getRandomQuote);
 
-const PORT = process.env.PORT;
 app.listen(PORT, () => console.log(`Server listening on port ${PORT}!`));
