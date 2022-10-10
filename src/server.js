@@ -1,9 +1,9 @@
-const express = require("express");
-const rateLimit = require("express-rate-limit");
-const cors = require("cors");
+import express from "express";
+import rateLimit from "express-rate-limit";
+import cors from "cors";
 
-const { PORT } = require("../config");
-const { getAllQuotes, getRandomQuote } = require("./controllers");
+import { PORT } from "../config.js";
+import { getAllQuotes, getRandomQuote } from "./controllers.js";
 
 const limiter = rateLimit({
   windowMs: 10 * 60 * 1000,
@@ -11,9 +11,7 @@ const limiter = rateLimit({
   message: "You have been rate limited. Please try again later.",
 });
 
-const app = express();
-
-app
+const app = express()
   .enable("trust proxy")
   .use(express.static("public"))
   .use(limiter)

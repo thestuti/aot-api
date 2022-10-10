@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "API that returns Attack On Titan Quotes",
   "main": "server.js",
+  "type": "module",
   "scripts": {
     "start": "node src/server",
     "dev": "nodemon src/server",
