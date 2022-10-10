@@ -1,12 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <title>Attack On Titan API</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-
     <link rel="stylesheet" href="./style.css" />
-
     <link
       href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300&display=swap"
       rel="stylesheet"
@@ -15,7 +13,6 @@
       href="https://fonts.googleapis.com/css2?family=Source+Serif+4&display=swap"
       rel="stylesheet"
     />
-
     <script async defer src="https://buttons.github.io/buttons.js"></script>
   </head>
 
@@ -41,69 +38,64 @@
       <section class="methods">
         <div class="block">
           <div class="block-desc">
-            <p>❯ Get a random quote</p>
-          </div>
-
-          <div class="block-container">
-            <div class="block-endpoint">
-              <span class="method">GET</span>
-              <a href="/random">/random</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="block">
-          <div class="block-desc">
-            <p>
-              ❯ Get specified number of random Thanos quotes, has to be less
-              than or equal to existing number of quotes
-            </p>
-          </div>
-
-          <div class="block-container">
-            <div class="block-endpoint">
-              <span class="method">GET</span>
-              <a href="/random?count=5">/random?count=&lt;integer&gt;</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="block">
-          <div class="block-desc">
             <p>❯ All quotes</p>
           </div>
 
           <div class="block-container">
             <div class="block-endpoint">
               <span class="method">GET</span>
-              <a href="/all/">/all/</a>
+              <a href="/quotes/">/quotes/</a>
             </div>
           </div>
         </div>
 
         <div class="block">
           <div class="block-desc">
-            <p>
-              ❯ Get specified number of quotes, has to be less than or equal to
-              existing number of quotes
-            </p>
+            ❯ Get specified number of quotes,<br />
+            has to be less than or equal to existing number of quotes
           </div>
 
           <div class="block-container">
             <div class="block-endpoint">
               <span class="method">GET</span>
-              <a href="/all?count=5">/all?count=&lt;integer&gt;</a>
+              <a href="/quotes?count=5">/quotes?count=&lt;integer&gt;</a>
+            </div>
+          </div>
+        </div>
+        <div class="block">
+          <div class="block-desc">❯ Get a random quote</div>
+
+          <div class="block-container">
+            <div class="block-endpoint">
+              <span class="method">GET</span>
+              <a href="/quotes/random">/quotes/random</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="block">
+          <div class="block-desc">
+            ❯ Get specified number of random quotes,<br />
+            has to be less than or equal to existing number of quotes
+          </div>
+
+          <div class="block-container">
+            <div class="block-endpoint">
+              <span class="method">GET</span>
+              <a href="/quotes/random?count=5"
+                >/quotes/random?count=&lt;integer&gt;</a
+              >
             </div>
           </div>
         </div>
       </section>
 
-      <section class="contribute" class = "center">
+      <section class="contribute" class="center">
         <h1>How to contribute</h1>
         <hr />
-        <br>
-        <p>
-          <h3>If you want to suggest a quote from Attack On Titan, go to the
+        <br />
+        <h3>
+          If you want to suggest a quote from Attack On Titan, go to the
           <a href="https://github.com/thestuti/aot-api" target="_blank"
             >GitHub repository</a
           >,
@@ -120,8 +112,8 @@
             target="_blank"
             >quotes.js</a
           >
-          file and just do a pull request! </h3>
-        </p>
+          file and just do a pull request!
+        </h3>
       </section>
     </main>
   </body>

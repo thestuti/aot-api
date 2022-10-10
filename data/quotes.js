@@ -1,4 +1,4 @@
-const quotes = [
+const quote_list = [
   "If you think reality is just living comfortably and following your own whims, can you seriously dare to call yourself a soldier?",
   "What is the point if those with the means and power do not fight?",
   "I don’t have time to worry if it’s right or wrong, you can’t hope for a horror story with a happy ending.",
@@ -69,7 +69,6 @@ const quotes = [
   "Right now we’ve got no choice but to try. We gotta believe there’s a way to beat him!",
   "There are only so many lives I can value. And…I decided who those people were six years ago. So…You shouldn’t try to ask for my pity. Because right now, I don’t have…Time to spare or room in my heart.",
   "I knew… you were more of a hero than anyone else.",
-  ,
   "One must never prioritize their own gain over humanity's survival.",
   "We’re born free. All of us. Free. Some don’t believe it, some try to take it away. To hell with them!",
   "Eren, aren't you glad you didn't end up getting dissected by her kind?",
@@ -91,7 +90,12 @@ const quotes = [
   "If You Don’t Want To Die — Think.",
   "live for your own sake",
   "I think the best disciplining is pain.",
-  "A person who cannot give up anything, can change nothing."
+  "A person who cannot give up anything, can change nothing.",
 ];
 
-module.exports = quotes.map((quote, idx) => ({ id: idx + 1, quote }));
+export const quotes = quote_list.map((quote, index) => {
+  return {
+    id: index + 1,
+    quote,
+  };
+});
