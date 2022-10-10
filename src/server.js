@@ -20,8 +20,8 @@ const app = express()
   .use(express.static("public"))
   .use(limiter)
   .use(cors())
-  .get("/quotes/random", getRandomQuote)
   .get("/quotes", getAllQuotes)
+  .get("/quotes/random", getRandomQuote)
   .use(notFoundHandler);
 
 app.listen(PORT, () => {
