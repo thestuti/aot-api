@@ -18,7 +18,7 @@ app
   .use(express.static("public"))
   .use(limiter)
   .use(cors())
-  .get("/all", getAllQuotes)
-  .get("/random", getRandomQuote);
+  .get("/random", getRandomQuote)
+  .get("/all", getAllQuotes);
 
 app.listen(PORT, () => console.log(`Server listening on port ${PORT}!`));
