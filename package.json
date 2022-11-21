@@ -19,7 +19,7 @@
     "express-rate-limit": "^6.6.0"
   },
   "devDependencies": {
-    "eslint": "^8.24.0",
+    "eslint": "^8.28.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.2.1",
     "nodemon": "^2.0.20",
